@@ -6,6 +6,15 @@ public class Bike extends Vehicle {
         this.engineCapacityCC = engineCapacityCC;
     }
 
+    // Checking weather a vehicle exists or not 
+    public boolean isAvailable() {
+        return super.isAvailable();
+    }
+    
+    public void setAvailable(boolean available) {
+        super.setAvailable(available);
+    }
+
     // Getter
     public int getEngineCapacityCC() {
         return engineCapacityCC;
@@ -27,4 +36,5 @@ public class Bike extends Vehicle {
         super.displayInfo();
         System.out.println("Engine Capacity: " + engineCapacityCC + "cc");
     }
+
 }
